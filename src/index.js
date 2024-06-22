@@ -1,12 +1,3 @@
-if (url.pathname === "/") {
-  return new Response("hello world!", {
-    status: 200,
-    headers: {
-      "content-type": "text/html"
-    }
-  });
-}
-
 addEventListener("fetch", (event) => {
   event.passThroughOnException();
   event.respondWith(handleRequest(event.request));
