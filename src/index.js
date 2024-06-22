@@ -1,7 +1,5 @@
-import DOCS from './help.html'
- 
 if (url.pathname === "/") {
-  return new Response(DOCS, {
+  return new Response("hello world!", {
     status: 200,
     headers: {
       "content-type": "text/html"
